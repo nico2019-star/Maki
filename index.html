@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080d25" />
+    <meta
+      name="description"
+      content="Un pequeño universo creado con cariño para Maki."
+    />
+    <title>Maki — Pequeña patita, grandes momentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="moon"></div>
+    </div>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio"
+        ><span class="paw">✿</span> un universo para Maki</a
+      >
+      <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#galeria">Recuerdos</a
+        ><a href="#maki">Su mundo</a><a href="#carta">Carta</a>
+      </nav>
+      <button
+        class="music-toggle"
+        id="musicToggle"
+        type="button"
+        aria-label="Activar música"
+      >
+        <span class="music-note">♫</span
+        ><span id="musicLabel">Nuestra canción</span
+        ><span class="music-bars"><i></i><i></i><i></i></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span></span> un detalle hecho con cariño <span></span>
+          </p>
+          <h1>Para <em>Maki</em><span class="title-paw">🐾</span></h1>
+          <p class="hero-subtitle">
+            Pequeña patita,<br /><strong>grandes momentos.</strong>
+          </p>
+          <p class="hero-text">
+            Hay seres pequeñitos que, sin decir una palabra, llenan todo de
+            amor.
+          </p>
+          <a class="button button-primary" href="#galeria"
+            ><span>Descubrir sus recuerdos</span><b>↗</b></a
+          >
+          <div class="hero-footnote">
+            <span class="tiny-heart">♥</span> Hecho especialmente para ustedes
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="photo-frame hero-photo">
+            <img
+              src="fotos/Maki1.jpeg"
+              alt="Maki, la gatita"
+              onerror="
+                this.parentElement.classList.add('placeholder');
+                this.style.display = 'none';
+              "
+            />
+            <div class="photo-placeholder">
+              <span>🐈</span><small>Tu foto favorita de Maki</small
+              ><small>fotos/maki1.jpg</small>
+            </div>
+            <span class="photo-sticker">mi pequeña estrella ✦</span>
+          </div>
+          <span class="float-heart heart-one">♡</span
+          ><span class="float-heart heart-two">✧</span
+          ><span class="float-paw">🐾</span>
+        </div>
+        <a class="scroll-cue" href="#galeria"><span></span> baja despacito</a>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="section-heading reveal">
+          <p class="eyebrow">una colección de ternura</p>
+          <h2>Diez momentos,<br /><em>un mismo amor.</em></h2>
+          <p>
+            Cada foto guarda un pedacito de su historia. Toca una para verla más
+            de cerca.
+          </p>
+        </div>
+        <div
+          class="gallery-grid"
+          id="galleryGrid"
+          aria-label="Galería de diez fotos de Maki"
+        ></div>
+        <p class="gallery-note">
+          Hecho de ronroneos, patitas y recuerdos que se quedan. <span>♡</span>
+        </p>
+      </section>
+
+      <section class="section maki-section" id="maki">
+        <div class="section-heading reveal">
+          <p class="eyebrow">su pequeño universo</p>
+          <h2>El mundo es más bonito<br /><em>con Maki en él.</em></h2>
+          <p>
+            Porque a veces la felicidad tiene bigotitos, mirada curiosa y cuatro
+            patitas.
+          </p>
+        </div>
+        <div class="maki-cards">
+          <article class="maki-card reveal">
+            <span class="card-symbol">♡</span>
+            <div>
+              <h3>Su manera de querer</h3>
+              <p>
+                Con sus ocurrencias, su compañía y esos momentos que alegran
+                hasta el día más normal.
+              </p>
+            </div>
+            <span class="card-number">01</span>
+          </article>
+          <article class="maki-card reveal">
+            <span class="card-symbol">✧</span>
+            <div>
+              <h3>Una personalidad única</h3>
+              <p>
+                Pequeña exploradora, dueña de sus rincones y protagonista de mil
+                historias.
+              </p>
+            </div>
+            <span class="card-number">02</span>
+          </article>
+          <article class="maki-card reveal">
+            <span class="card-symbol">🐾</span>
+            <div>
+              <h3>Un amor pequeñito y enorme</h3>
+              <p>
+                Porque no hace falta hablar para convertirse en una parte muy
+                especial de la vida.
+              </p>
+            </div>
+            <span class="card-number">03</span>
+          </article>
+        </div>
+        <div class="dreamy-cat reveal">
+          <img
+            src="fotos/Maki7.jpeg"
+            alt="Maki descansando"
+            onerror="
+              this.parentElement.classList.add('placeholder');
+              this.style.display = 'none';
+            "
+          />
+          <div class="dreamy-placeholder">
+            🐈‍⬛ <span>una estrella con bigotitos</span>
+          </div>
+          <div class="dreamy-caption">
+            “Las mejores cosas llegan<br />en tamaños pequeñitos.”
+          </div>
+        </div>
+        <a class="button button-secondary" href="#carta"
+          >Hay algo más para ti <b>♡</b></a
+        >
+      </section>
+
+      <section class="section letter-section" id="carta">
+        <div class="letter-glow"></div>
+        <div class="letter-card reveal">
+          <div class="letter-top">
+            <span>una carta especial</span><span>♡</span>
+          </div>
+          <p class="letter-kicker">Para mi amor...</p>
+          <h2>Unas palabras<br /><em>desde el corazón.</em></h2>
+          <div class="letter-body">
+            <p>
+              Mi amor, quería hacerte este pequeño detalle porque sé que Maki es
+              alguien muy especial para ti. Y si algo te hace feliz, también
+              merece un rinconcito bonito en este regalo.
+            </p>
+            <p>
+              Ojalá cada foto te saque una sonrisa y te recuerde lo lindo que es
+              tener a alguien tan pequeñita que puede llenar tus días de tanta
+              ternura. Maki tiene la suerte de tenerte, de recibir tu cariño y
+              de formar parte de tus momentos más bonitos.
+            </p>
+            <p>
+              Y yo tengo la suerte de conocer esa parte tan dulce de ti, esa
+              manera tuya de encariñarte y cuidar a quienes quieres. Nunca dejes
+              de encontrar magia en las cosas pequeñas, mi niña hermosa.
+            </p>
+            <p>
+              Este universo es para ustedes dos, con mucho cariño. Que nunca les
+              falten los momentos felices, las siestas "tranquilas" y un montón
+              de recuerdos bonitos. ♡
+            </p>
+          </div>
+          <p class="letter-sign">
+            Con todo mi cariño,<br /><span>tu negrito ♡</span>
+          </p>
+          <div class="letter-stamp">M<br /><small>♡</small></div>
+        </div>
+        <div class="closing-line reveal">
+          <span>✦</span>
+          <p>Gracias por compartir tu mundo conmigo.</p>
+          <span>✦</span>
+        </div>
+        <a class="button button-primary back-home" href="#inicio"
+          >Volver a ver las estrellas <b>↑</b></a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <span>hecho con cariño</span><span>para Maki y su humana favorita ♡</span
+      ><span>✧</span>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Foto ampliada"
+    >
+      <button
+        class="lightbox-close"
+        id="closeLightbox"
+        aria-label="Cerrar foto"
+      >
+        ×
+      </button>
+      <button
+        class="lightbox-arrow prev"
+        id="prevPhoto"
+        aria-label="Foto anterior"
+      >
+        ‹
+      </button>
+      <figure>
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption>
+          <span id="lightboxCount">1 / 10</span>
+          <p id="lightboxCaption"></p>
+        </figcaption>
+      </figure>
+      <button
+        class="lightbox-arrow next"
+        id="nextPhoto"
+        aria-label="Foto siguiente"
+      >
+        ›
+      </button>
+    </div>
+
+    <audio
+      id="backgroundMusic"
+      src="musica/cancion.mp3"
+      loop
+      preload="none"
+    ></audio>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
