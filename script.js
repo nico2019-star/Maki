@@ -34,7 +34,7 @@ function makePhoto(index) {
   };
   const placeholder = document.createElement("div");
   placeholder.className = "photo-placeholder";
-  placeholder.innerHTML = `<span>🐈</span><small>Foto ${index + 1} de Maki</small><small>fotos/maki${index + 1}.jpg</small>`;
+  placeholder.innerHTML = `<span>🐈</span><small>Foto ${index + 1} de Maki</small><small>fotos/maki${index + 1}.jpeg</small>`;
   const number = document.createElement("span");
   number.className = "photo-index";
   number.textContent = String(index + 1).padStart(2, "0");
